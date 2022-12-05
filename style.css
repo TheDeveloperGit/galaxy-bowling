@@ -1,0 +1,164 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+   font-family: sans-serif;
+}
+
+img,
+picture {
+   max-width: 100%;
+   display: block;
+}
+
+body {
+   background-image: url("https://images.pexels.com/photos/1146134/pexels-photo-1146134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")
+}
+
+.container {
+   padding: 0px;
+   align-items: center;
+}
+
+.top-navigation {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background: slategray;
+   padding-top: .5rem;
+   padding-bottom: .5rem;
+}
+
+.top-navigation-left {
+   display: flex;
+   align-items: center;
+   gap: .75rem;
+   padding-left: 1rem;
+}
+
+.top-navigation-left a {
+   text-decoration: none;
+   color: black;
+   display: flex;
+   gap: 1rem;
+}
+
+.top-navigation-links {
+float: left;
+   display: block;
+   padding: 8px 15px;
+   text-decoration: none;
+   text-align: center;
+   display: flex;
+   gap: 3em;
+   font-size: 1.50rem;
+}
+
+.top-navigation-links a {
+   text-decoration: none;
+   color: black;
+   align-items: center;
+   display: flex;
+   gap: 1rem;
+}
+
+.top-navigation-right {
+   display: flex;
+   gap: 1rem;
+   padding-right: 1rem;
+   cursor: pointer;
+}
+
+.top-navigation-right a {
+   text-decoration: none;
+   color: black;
+}
+
+.intro {
+   text-align: center;
+   width: 100%;
+   font-size: 3.50rem;
+   font-weight: 500;
+   padding-top: 3rem;;
+   line-height: 1.1;
+   color: white;
+}
+
+.grid {
+   padding-top: 3rem;
+   max-width: 100rem;
+   margin-inline: auto;
+   padding-inline: 5rem;
+}
+
+.stacked {
+   display: grid;
+}
+
+.card-stacked > * {
+   grid-column: 1 / 2;
+   grid-row: 1 / 2;
+}
+
+.service-grid {
+   display: grid;
+   gap: 1rem;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card {
+   aspect-ratio: 1 / 1.08;
+   border-radius: 3px solid slategray;
+}
+
+.card__content {
+   background: white;
+   align-self: end;
+   text-align: center;
+   margin: .5rem .5rem 2rem;
+   cursor: pointer;
+   padding: .5rem;
+   box-shadow: 0 .75rem 1rem rgb(0 0 0 / .1);
+
+}
+.card__img {
+   width: 100%
+   aspect-ratio: 1 / 1;
+   object-fit: cover;
+}
+
+.card__title {
+   text-align: center;
+   font-size: 1.25rem;
+   line-height: 1.1;
+   color: slategray;
+}
+
+.footer{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background: slategray;
+   padding-top: .5rem;
+   padding-bottom: .5rem;
+}
+
+.newsletter {
+   color: orange;
+   text-align: center;
+   flex-grow: 2;
+}
+
+.newsletter button {
+   border: 1px solid black;
+   background-color: white;
+   cursor: pointer;
+   width: 100px
+}
+
+.copyright {
+   color: white;
+   text-align: center;
+   flex-grow: 2;
+}
